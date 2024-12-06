@@ -1,1 +1,1 @@
-Proyecto de una pagina web para una concesionaria de autos.
+Proyecto web responsive para una concesionaria de autos.
