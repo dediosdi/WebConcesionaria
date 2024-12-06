@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Touche';
+    src: url('fonts/Touche\Light.ttf')format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{font-size: 3.8em;}
+h2{font-size: 2.5em;}
+h3{font-size: 2em;}
+p{font-size: 1,25em;}
+ul{list-style-type: none;}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: gray;
+}
+button:hover {
+    background-color: brown;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: #330002;
+}
+header nav a {
+    color: white; /* Cambia el color del texto a blanco */
+    text-decoration: none; /* Opcional: elimina el subrayado */
+    font-size: 16px; /* Opcional: ajusta el tamaño de la fuente */
+    padding: 10px; /* Opcional: agrega espacio interno */
+}
+header {
+    margin: 0;
+
+    font-weight: bold;
+    font-size: 1.6em;
+    
+
+}
+
+#logo {
+    width: 150px; /* Ajusta el tamaño del logo */
+     height: auto; /* Mantiene la relación de aspecto */
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header  .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header  a{
+    padding: 5px 12 px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black
+}
+
+
+header  a:hover{
+    color: rgb(226, 43, 43);
+ 
+}
+
+
+
+#hero {
+    display: flex;
+    align-items: flex-start; /* Alinea el contenido al principio (arriba) */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    text-align: center; 
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px; /* Agrega espacio entre el contenido y el borde izquierdo */
+}
+
+#hero h3, #hero button {
+    margin-left:9%;
+    text-align: center; 
+
+
+
+
+
+
+
+
+#catalogo{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+
+}
+
+
+#catalogo.container{
+    padding: 100px 0px;
+}
+
+#catologo h2{
+    margin-top:0;
+}
+#catalogo.container{
+    display:none
+}
+
+#catalogo.carta{
+
+
+}
+
+.carta:first-child{
+    background-image: url(images/chevrolet.jpg);
+}
+.carta:nth-child(2){
+
+}
+
+.carta:nth-child(3){
+
+}
+
+.carta:nth-child(4){
+
+}
