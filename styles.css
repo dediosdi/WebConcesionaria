@@ -1,161 +1,208 @@
-*{
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'Touche';
-    src: url('fonts/Touche\Light.ttf')format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-h1{font-size: 3.8em;}
-h2{font-size: 2.5em;}
-h3{font-size: 2em;}
-p{font-size: 1,25em;}
-ul{list-style-type: none;}
-
-button {
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 5);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    color: white;
-    background-color: gray;
-}
-button:hover {
-    background-color: brown;
-}
-
+/* General Styles */
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.container{
-    max-width: 1400px;
+.container {
+    max-width: 1200px;
     margin: auto;
+    padding: 0 20px;
 }
 
+/* Header Styles */
 header {
-    background-color: #330002;
-}
-header nav a {
-    color: white; /* Cambia el color del texto a blanco */
-    text-decoration: none; /* Opcional: elimina el subrayado */
-    font-size: 16px; /* Opcional: ajusta el tamaño de la fuente */
-    padding: 10px; /* Opcional: agrega espacio interno */
-}
-header {
-    margin: 0;
-
-    font-weight: bold;
-    font-size: 1.6em;
-    
-
+    background-color: #330002; 
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#logo {
-    width: 150px; /* Ajusta el tamaño del logo */
-     height: auto; /* Mantiene la relación de aspecto */
-}
-
-header .logo{
-    margin: 0;
-    padding: 25px 30px
-}
-
-header .container{
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header  .nav{
+header .logo img {
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
+}
+
+header nav {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
+    gap: 20px;
 }
 
-header  a{
-    padding: 5px 12 px;
+header nav a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    color: black
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
-header  a:hover{
-    color: rgb(226, 43, 43);
- 
+header nav a:hover {
+    background-color: #444;
+    color: #fff;
 }
 
-
-
+/* Hero Section */
 #hero {
     display: flex;
-    align-items: flex-start; /* Alinea el contenido al principio (arriba) */
-    justify-content: flex-start; /* Alinea el contenido a la izquierda */
-    text-align: center; 
-    flex-direction: column;
-    height: 90vh;
-    color: white;
-    background-image: url("images/background.jpg");
-    background-repeat: no-repeat;
+    background-image: url('images/background.jpg');
     background-size: cover;
-    background-position: center center;
-    padding: 100px; /* Agrega espacio entre el contenido y el borde izquierdo */
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    align-items: flex-start; /* Alinea el contenido al principio (arriba) */
+    color: white;
+    text-align: center; 
+    padding: 110px;
+    align-items: flex-start; /* Alinea el contenido al principio (arriba) */
 }
 
-#hero h3, #hero button {
-    margin-left:9%;
-    text-align: center; 
+
+#hero h3 {
+    display: flex;
+    color: white;
+    padding: 20px;
+    position: relative;
+    margin-top: 240px;
+    align-items: flex-start; /* Alinea el contenido al principio (arriba) */
+    right: 450px;
+
+      }
+      
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
 
 
 
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
 
+/* Catalog Section */
+#catalogo {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
 
+#catalogo h2 {
+    font-size: 2.5em;
+    margin-bottom: 60px;
+    color: #333; /* Color de texto neutro */
+}
 
+.carta {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.carta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
 
-#catalogo{
-    background-color: rgb(30,30,30);
+.carta img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.carta h3 {
+    font-size: 1.8em;
+    margin: 20px 0 10px;
+    color: rgb(185, 24, 24); /* Color predeterminado para botones y elementos interactivos */
+}
+
+.carta p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Color de fondo neutro */
     color: white;
     text-align: center;
-
+    padding: 20px 0;
+    margin-top: 40px;
 }
 
-
-#catalogo.container{
-    padding: 100px 0px;
+footer p {
+    margin: 0;
 }
 
-#catologo h2{
-    margin-top:0;
-}
-#catalogo.container{
-    display:none
-}
-
-#catalogo.carta{
-
-
-}
-
-.carta:first-child{
-    background-image: url(images/chevrolet.jpg);
-}
-.carta:nth-child(2){
-
+/* Carta Producto1 */
+.carta.producto1 {
+    background-image: url('images/106961034-16342989482021-10-15t115305z_757712464_rc2baq9ww2kh_rtrmadp_0_usa-economy.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.carta:nth-child(3){
-
+.carta.producto2 {
+    background-image: url('images/2024-chevrolet-camaro-zl1-collectors-edition-664669be3decc.avif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.carta:nth-child(4){
+/* Additional Styles */
+button {
+    background-color: #330002;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+button:hover {
+    background-color: #444;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
 }
