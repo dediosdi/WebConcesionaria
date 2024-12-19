@@ -1,4 +1,11 @@
 /* General Styles */
+@font-face {
+    font-family: 'ToucheLight';
+    src: url('/WebConcesionariaDeAutos/fonts/Touche\ Light.ttf') format('truetype'),
+         url('/WebConcesionariaDeAutos/fonts/Touche\ Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -9,12 +16,30 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 0 20px;
 }
+
+
+.scroll-down {
+    margin: 40px auto; /* Aumenta el margen para mayor separación */
+    text-align: center;
+    font-size: 5em; /* Aumenta el tamaño de la fuente */
+    color: #ff0000; /* Cambia el color según tu diseño */
+    text-decoration: none;
+    justify-content:center;
+}
+
+.scroll-down:hover {
+    color: #555; /* Cambia el color al pasar el mouse */
+}
+
+
 
 /* Header Styles */
 header {
@@ -22,6 +47,8 @@ header {
     color: white;
     padding: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'ToucheLight', sans-serif;
+    font-weight: lighter;
 }
 
 header .container {
@@ -29,6 +56,8 @@ header .container {
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 header .logo img {
     width: 120px;
@@ -64,6 +93,8 @@ header nav a:hover {
     background-image: url('images/background.jpg');
     background-size: cover;
     background-position: center;
+    font-family: 'ToucheLight', sans-serif;
+    font-weight: bolder;
     height: 400px;
     display: flex;
     justify-content: flex-start; /* Alinea el contenido a la izquierda */
@@ -78,7 +109,7 @@ header nav a:hover {
 #hero h3 {
     display: flex;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra negra */
-
+    font-family: 'ToucheLight', sans-serif;
     color: white;
     padding: 20px;
     position: relative;
@@ -103,17 +134,19 @@ header nav a:hover {
 
 /* Catalog Section */
 #catalogo {
-    background-color: #fff;
+    background-color: #000000;
     padding: 50px 20px;
     text-align: center;
+    font-family: 'ToucheLight', sans-serif;
+    
 }
 
 #catalogo h2 {
 
     font-size: 2.5em;
     margin-bottom: 60px;
-    text-shadow: 2px 2px 4px rgba(119, 108, 108, 0.5); /* Sombra negra */
-    color: #333; /* Color de texto neutro */
+    text-shadow: 1px 1px 4px rgba(119, 108, 108, 0.5); /* Sombra negra */
+    color: #ffffff; /* Color de texto neutro */
 }
 
 .carta {
@@ -140,7 +173,7 @@ header nav a:hover {
     margin: 20px 0 10px;
     font-weight: bolder;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra negra */
-    background: linear-gradient(to right, #c03816, #ff0000);
+    background: linear-gradient(to right, #ff0000, #ff0000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -148,7 +181,7 @@ header nav a:hover {
 .carta p {
     font-size: 1.1em;
     margin-bottom: 20px;
-    color: #ad1d1d;
+    color: #ff0000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra negra */
     font-family: Arial, sans-serif;
 
