@@ -77,6 +77,8 @@ header nav a:hover {
 
 #hero h3 {
     display: flex;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra negra */
+
     color: white;
     padding: 20px;
     position: relative;
@@ -107,8 +109,10 @@ header nav a:hover {
 }
 
 #catalogo h2 {
+
     font-size: 2.5em;
     margin-bottom: 60px;
+    text-shadow: 2px 2px 4px rgba(119, 108, 108, 0.5); /* Sombra negra */
     color: #333; /* Color de texto neutro */
 }
 
@@ -134,13 +138,21 @@ header nav a:hover {
 .carta h3 {
     font-size: 1.8em;
     margin: 20px 0 10px;
-    color: rgb(185, 24, 24); /* Color predeterminado para botones y elementos interactivos */
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra negra */
+    background: linear-gradient(to right, #c03816, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .carta p {
     font-size: 1.1em;
     margin-bottom: 20px;
-    color: #666;
+    color: #ad1d1d;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra negra */
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
 }
 
 /* Footer Styles */
@@ -169,7 +181,18 @@ footer p {
 }
 
 .carta.producto2 {
-    background-image: url('images/2024-chevrolet-camaro-zl1-collectors-edition-664669be3decc.avif');
+    background-image: url('images/71697.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carta.producto3 {
+    background-image: url('images/cotizador.jpg');
     background-size: cover;
     background-position: center;
     color: white;
